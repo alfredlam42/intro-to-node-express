@@ -102,3 +102,33 @@ http.createServer(function(req, res) {
 
 console.log('Our server is running at http://localhost:'+ port);
 ```
+
+##Intro To Express
+
+server2.js
+```javascript
+var port = 1234;
+var express = require('express');
+var app = express();
+
+app.use('/', function(req, res){
+  res.send('Hello World')
+})
+
+app.listen(port);
+console.log('Server running on http://localhost:' + port);
+```
+
+As you can see, Express cuts down on a lot of the things we need to type and allows us to start using routes.
+
+###Folder Structure
+
+There is no structure! You can have stuff all over the place if you wanted under whatever folder you want.
+
+But obviously it's better if you have some kind of structure so it'll be easier to find the files you are looking for.
+
+Be in the main directory and then copy and paste the following line into your terminal to create the directories.
+
+```
+mkdir app && cd app && mkdir controllers && mkdir models && mkdir views && cd .. && mkdir config && cd config && mkdir env && cd .. && mkdir public && cd public && mkdir css && mkdir img && mkdir js && cd ..
+```
