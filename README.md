@@ -40,3 +40,45 @@ You definitely should have this created.
 The node packages can be added to your commits which is annoying and takes time.
 
 [List of .gitignore files for every language](https://github.com/github/gitignore)
+
+##Intro to Node
+
+Node uses modules. A module is their own Javascript file and have their own scopes that hold their own variables.
+Modules are broken down into three key components:
+
+**require()** is used to load modules into your code
+**exports** allows you to expose pieces of code that other modules can use
+**module** is the file itself which contains all the codes
+
+###Example 1
+
+hello.js
+```javascript
+var message = 'Hello World!';
+
+exports.sayHello = function(){
+  console.log(message);
+}
+```
+
+app.js
+```javascript
+var hello = require('hello')
+hello.sayHello()
+```
+
+###Example 2 - same result as example 1, but different approach
+
+hello.js
+```javascript
+module.exports = function(){
+  var message = 'Hello World!';
+  console.log(message);
+}
+```
+
+app.js
+```javascript
+var hello = require('hello');
+hello();
+```
