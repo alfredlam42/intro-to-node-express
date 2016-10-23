@@ -1,0 +1,22 @@
+{
+  "name": "intro-to-react",
+  "version": "1.0.0",
+  "description": "introduction to react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfredlam42/intro-to-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfredlam42/intro-to-react/issues"
+  },
+  "homepage": "https://github.com/alfredlam42/intro-to-react#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
