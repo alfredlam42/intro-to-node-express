@@ -47,7 +47,9 @@ Node uses modules. A module is their own Javascript file and have their own scop
 Modules are broken down into three key components:
 
 **require()** is used to load modules into your code
+
 **exports** allows you to expose pieces of code that other modules can use
+
 **module** is the file itself which contains all the codes
 
 ###Example 1
