@@ -105,7 +105,7 @@ console.log('Our server is running at http://localhost:'+ port);
 
 ##Intro To Express
 
-server2.js
+server.js
 ```javascript
 var port = 1234;
 var express = require('express');
@@ -131,4 +131,35 @@ Be in the main directory and then copy and paste the following line into your te
 
 ```
 mkdir app && cd app && mkdir controllers && mkdir models && mkdir views && cd .. && mkdir config && cd config && mkdir env && cd .. && mkdir public && cd public && mkdir css && mkdir img && mkdir js && cd ..
+```
+
+###Packages To Install
+
+####path
+```
+npm install path --save
+```
+
+####morgan
+```
+npm install morgan --save
+```
+
+###http
+```
+npm install http --save
+````
+
+```sessions
+npm install sessions --save
+```
+
+####dotENV
+```
+npm install dotenv --save
+```
+
+####Embedded Javascript Files (.ejs)
+```
+npm install ejs --save
 ```
