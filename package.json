@@ -2,7 +2,7 @@
   "name": "intro-to-react",
   "version": "1.0.0",
   "description": "introduction to react",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/alfredlam42/intro-to-react#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "sessions": "0.0.2-7"
   }
 }
