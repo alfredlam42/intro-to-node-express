@@ -4,5 +4,5 @@ var horses = require('./horses');
 
 module.exports = function(app){
   app.use('/', index);
-  app.use('horses', horses);
+  app.use('/horses', horses);
 }
